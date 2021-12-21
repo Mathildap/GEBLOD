@@ -1,3 +1,20 @@
 body {
-    background-color: red;
+    margin: 0;
+    padding: 0;
+}
+.desktop-menu {
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+}
+.landing-page {
+    height: 100vh;
+}
+footer {
+    .logo-info-container {
+        display: flex;
+        justify-content: space-around;
+    }
 }
