@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI,AAAC,CACD,gBAAgB,CAAE,GAAG,CACxB,ADAD,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK,EEFnC,AAAA,IAAI,AAAC,CACD,gBAAgB,CAAE,IAAI,CACzB,CFID,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM,EGNpC,AAAA,IAAI,AAAC,CACD,gBAAgB,CAAE,KAAK,CAC1B",
+    "sources": [
+        "../../sass/style.scss",
+        "../../sass/_base.scss",
+        "../../sass/_tablet.scss",
+        "../../sass/_desktop.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
