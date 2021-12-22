@@ -1,3 +1,4 @@
+/* - - - - - HEADER - - - - - */
 header {
     .burger-menu,
     .search-box {
@@ -13,21 +14,59 @@ header {
         width: 100%;
     }
 }
-.left-container img {
-    display: block;
-    width: 60%;
-    margin: 80px auto 20px auto;
+
+/* - - - - - LANDING PAGE - - - - - */
+.landing-page {
+    h1 {
+        font-size: 72px;
+        width: 60%;
+        margin-top: 85px;
+    }
+    h2 {
+        font-size: 56px;
+    }
+    .svg-heart {
+        display: none;
+    }
 }
-.busschedule-container img {
-    display: block;
-    width: 60%;
-    margin: 45px 13% 45px 13%;
+/* - - - - - SCROLL DOWN PAGE - - - - - */
+.scrolldown-page {
+    width: 70%;
+    margin: 0 auto;
+
+    .left-container img {
+        display: block;
+        width: 100%;
+    }
+    .busschedule-container img {
+        width: 100%;
+        margin: 45px 0;
+    }
+}
+
+/* - - - - - FOOTER - - - - - */
+.SoMe-container {
+    width: 70%;
+    margin: 0 auto;
 }
 .logo-info-container {
     display: flex;
     justify-content: space-around;
-
+    align-items: center;
+    text-align: left;
+    font-size: smaller;
+    p {
+        text-decoration: none;
+        margin: 0;
+    }
+    article {
+        width: 28%;
+    }
     .logo-container {
         width: 30%;
+    }
+    .logo-container img {
+        margin: 0 0 0 30px;
+        width: 150px;
     }
 }
