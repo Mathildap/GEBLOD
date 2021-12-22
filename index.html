@@ -17,9 +17,11 @@
     <body>
         <main>
             <header class="mobile-menu">
-                <div>BurgerMenu</div>
-                <div>Logo</div>
-                <div>Search</div>
+                <div class="burger-menu">BurgerMenu</div>
+                <div class="header-logo">
+                    <img src="/img/logo.png" alt="GeBlod Logga" />
+                </div>
+                <div class="search-box">Search</div>
             </header>
             <header class="desktop-menu">
                 <div class="header-logo">Logo</div>
@@ -34,15 +36,18 @@
                     <div>SearchIcon</div>
                 </div>
             </header>
+
             <section class="landing-page">
                 <h1>Alla julklappar behöver inte kosta pengar!</h1>
                 <h2>Bli blodgivare idag.</h2>
                 <button>Jag vill bli blodgivare!</button>
+                <div class="opacity-box"></div>
             </section>
+
             <section class="scrolldown-page">
                 <article>
-                    <article>
-                        <div>Image</div>
+                    <article class="left-container">
+                        <img src="img/Graphic.png" alt="Tabell över blodgrupper" />
                         <p>Så här ser dagens läge ut i respektive blodgrupp, ditt blod behövs för att täcka framtidens behov!</p>
                     </article>
                     <article>
@@ -54,12 +59,13 @@
                         <button>Registrera</button>
                     </article>
                 </article>
-                <article>
+                <article class="right-container">
                     <p>Det har aldrig varit enklare att bidra till Sveriges sjukvård. Ge bort en viktig julklapp som gynnar grannen, familjemedlemmar och alla andra i Sverige. Vi behöver bli fler som ger blod för att täcka upp behovet som finns idag och kommer att finnas i framtiden. 
                     </p>
-                    <div>
-                        <p>Icon</p>
-                        <p>Ta reda på var blodbussen befinner sig just nu!</p>
+                    <div class="busschedule-container">
+                        <a href="#">
+                        <img src="/img/busschedule.png" alt="Länk till blodbuss-schema">
+                    </a>
                     </div>
                 </article>
             </section>
@@ -69,7 +75,9 @@
                     <div>Icons</div>
                 </article>
                 <article class="logo-info-container">
-                    <div class="logo-container">Logo</div>
+                    <div class="logo-container">
+                        <img src="/img/logo.png" alt="GeBlod Logga" />
+                    </div>
                     <article>
                         <p>Om blodgivning</p>
                         <a href="#">Första besöket</a><br/>

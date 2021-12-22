@@ -1,2 +1,3 @@
 - Jenni kommenterade om H1
--
+- När man scrollar ska menyn bli vit?
+- Ska jag klippa ut bilden så det inte blir en kant?

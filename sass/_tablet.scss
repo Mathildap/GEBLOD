@@ -1,1 +1,29 @@
+header {
+    .header-logo,
+    .burger-menu,
+    .search-box {
+        width: 20%;
+        text-align: center;
+    }
+    .header-logo img {
+        width: 100%;
+    }
+}
+.left-container img {
+    display: block;
+    width: 60%;
+    margin: 80px auto 20px auto;
+}
+.busschedule-container img {
+    display: block;
+    width: 60%;
+    margin: 45px 13% 45px 13%;
+}
+.logo-info-container {
+    display: flex;
+    justify-content: space-around;
 
+    .logo-container {
+        width: 30%;
+    }
+}
