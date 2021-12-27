@@ -4,11 +4,9 @@ header {
     .search-box {
         width: 15%;
         text-align: center;
-        margin-top: 10px;
     }
     .header-logo {
         width: 18%;
-        margin-top: 15px;
     }
     .header-logo img {
         width: 100%;
@@ -21,18 +19,41 @@ header {
         font-size: 72px;
         width: 60%;
         margin-top: 85px;
+        margin-bottom: 0;
     }
     h2 {
         font-size: 56px;
+        margin: 85px 0px 85px 30px;
     }
     .svg-heart {
         display: none;
+    }
+    button {
+        padding: 20px 40px;
     }
 }
 /* - - - - - SCROLL DOWN PAGE - - - - - */
 .scrolldown-page {
     width: 70%;
     margin: 0 auto;
+
+    .left-container {
+        p {
+            margin-left: 0;
+        }
+        input {
+            height: 58px;
+            position: relative;
+            display: inline-block;
+        }
+        button {
+            height: 58px;
+            width: 18%;
+            padding: 14px 37px;
+            position: absolute;
+            right: 18%;
+        }
+    }
 
     .left-container img {
         display: block;
