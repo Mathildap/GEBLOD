@@ -1,18 +1,21 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #e5e5e5;
+    // background-color: #e5e5e5;
+    background-color: #ece8e9;
     font-family: 'Oswald', sans-serif;
     color: #142601;
 }
 
 /* - - - - - HEADER - - - - - */
+.scroll-active {
+    background-color: #ece8e9dc;
+}
 header {
     width: 100%;
-    height: 10%;
+    height: 12%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     position: fixed;
     background-image: linear-gradient(to bottom, #ffffff, #ffffff00);
     z-index: 10;
@@ -21,17 +24,17 @@ header {
     .search-box {
         width: 20%;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 20px;
     }
     .header-logo {
         width: 30%;
-        margin-top: 15px;
+        margin-top: 20px;
     }
     .header-logo img {
         width: 100%;
     }
     .fas {
-        font-size: 35px;
+        font-size: 40px;
     }
 }
 .desktop-menu {
@@ -44,19 +47,20 @@ header {
     padding-top: 78px;
     background-image: url('/img/background.jpg');
     background-size: cover;
-    background-position-x: 45%;
+    background-repeat: no-repeat;
     position: relative;
 
     h1 {
         font-size: 46px;
-        width: 70%;
+        font-weight: 600;
+        width: 65%;
         margin-left: 30px;
         margin-top: 60px;
     }
     h2 {
         font-size: 46px;
         font-weight: lighter;
-        margin-left: 30px;
+        margin: 45px 0px 45px 30px;
     }
     .svg-heart {
         width: 60px;
@@ -64,13 +68,32 @@ header {
         background-color: red;
         margin: 45px auto;
     }
+    button {
+        position: relative;
+        background-color: #f13712;
+        border: 0;
+        border-radius: 10px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+        padding: 14px 29px;
+        outline: 0;
+        margin-left: 30px;
+        z-index: 11;
+
+        &:hover {
+            background-color: #365902;
+        }
+    }
     .opacity-box {
-        height: 78px;
+        height: 97px;
         width: 100%;
-        background-image: linear-gradient(to top, #ffffffbe, #ffffff00);
+        background-image: linear-gradient(to top, #ece8e9d4, #ece8e900);
         position: absolute;
         bottom: 0;
         z-index: 9;
+        margin-top: 100px;
     }
 }
 
@@ -81,6 +104,7 @@ header {
     p {
         font-size: 22px;
         margin: 0;
+        margin-left: 10px;
     }
     h3 {
         font-size: 46px;
@@ -95,14 +119,43 @@ header {
         margin: 0 0 0 7px;
     }
     .signup-text {
-        margin-top: 45px;
+        margin: 45px 0 15px 0;
         font-size: 22px;
+    }
+    label {
+        margin-left: 5px;
+    }
+    input {
+        display: block;
+        width: 100%;
+        height: 45px;
+        border: 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+    button {
+        width: 100%;
+        height: 45px;
+        background-color: #f53911;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 0;
+        border-radius: 10px;
+        font-family: Oswald;
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        color: #ffffff;
+
+        &:hover {
+            background-color: #365902;
+        }
     }
 }
 .left-container img {
     display: block;
     width: 100%;
-    margin: 70px auto 20px auto;
+    margin: 70px auto 10px auto;
 }
 .right-container {
     margin: 0 25px;

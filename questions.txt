@@ -1,5 +1,6 @@
 - Jenni kommenterade om H1
 - När man scrollar ska menyn bli vit?
 - Ska jag klippa ut bilden så det inte blir en kant?
+- Mobilvy, ska bilder va större eller funkar det så?
 - Bakgrundfärgen?
 - Hover på iconer?
