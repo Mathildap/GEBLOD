@@ -15,6 +15,9 @@ header {
 
 /* - - - - - LANDING PAGE - - - - - */
 .landing-page {
+    height: 1024px;
+    min-height: 1024px;
+
     h1 {
         font-size: 72px;
         width: 60%;
@@ -69,6 +72,9 @@ header {
 .SoMe-container {
     width: 70%;
     margin: 0 auto;
+    .SoMe-text {
+        margin-left: 10%;
+    }
 }
 .logo-info-container {
     display: flex;

@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    // background-color: #e5e5e5;
     background-color: #ece8e9;
     font-family: 'Oswald', sans-serif;
     color: #142601;
@@ -18,7 +17,7 @@ header {
     justify-content: space-between;
     position: fixed;
     background-image: linear-gradient(to bottom, #ffffff, #ffffff00);
-    z-index: 10;
+    z-index: 12;
 
     .burger-menu,
     .search-box {
@@ -48,6 +47,7 @@ header {
     background-image: url('/img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-x: 50%;
     position: relative;
 
     h1 {
@@ -68,6 +68,13 @@ header {
         background-color: red;
         margin: 45px auto;
     }
+    .svg-heart-text {
+        display: none;
+        width: 60px;
+        height: 60px;
+        background-color: red;
+        margin: 45px auto;
+    }
     button {
         position: relative;
         background-color: #f13712;
@@ -80,6 +87,7 @@ header {
         padding: 14px 29px;
         outline: 0;
         margin-left: 30px;
+        box-shadow: 0px 4px 4px 0px #00000040;
         z-index: 11;
 
         &:hover {
@@ -174,8 +182,8 @@ header {
 /* - - - - - FOOTER - - - - - */
 .SoMe-container {
     p {
-        margin-left: 45px;
-        margin-bottom: 5px;
+        width: 80%;
+        margin: 5px auto;
         font-size: 28px;
     }
     .icons-container {
