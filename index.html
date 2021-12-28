@@ -29,7 +29,7 @@
                 </div>
                 <div class="search-box"><i class="fas fa-search"></i></div>
             </header>
-            <header class="desktop-menu">
+            <header class="desktop-menu" id="desktopMenu">
                 <div class="header-logo">
                     <img src="/img/Logo1.png" alt="GeBlod Logga" />
                 </div>
@@ -40,17 +40,45 @@
                     <li>Frågor & svar</li>
                 </nav>
                 <div class="search-container">
-                    <input type="search" placeholder="Vad söker du?" />
+                    <input type="text" placeholder="Vad söker du?" />
                     <div><i class="fas fa-search"></i></div>
                 </div>
             </header>
 
             <section class="landing-page">
                 <h1>Alla julklappar behöver inte kosta pengar!</h1>
-                <div class="svg-heart"></div>
+                <div class="svg-heart" id="svgHeart">
+                    <svg
+                        width="64"
+                        height="54"
+                        viewBox="0 0 64 54"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M57.7879 3.69233C50.938 -1.93659 40.7507 -0.924106 34.4634 5.33158L32.0009 7.77841L29.5385 5.33158C23.2636 -0.924106 13.0638 -1.93659 6.21391 3.69233C-1.63593 10.1529 -2.04843 21.7482 4.97644 28.7512L29.1635 52.8338C30.7259 54.3887 33.2634 54.3887 34.8259 52.8338L59.0129 28.7512C66.0503 21.7482 65.6378 10.1529 57.7879 3.69233Z"
+                            fill="#F53911"
+                        />
+                    </svg>
+                </div>
                 <h2>
                     Bli blodgivare idag.
-                    <div class="svg-heart-text"></div>
+                    <div class="svg-heart-text">
+                        <svg
+                            id="svgHeartDesktop"
+                            class="svg"
+                            width="36"
+                            height="31"
+                            viewBox="0 0 36 31"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M32.5057 2.06714C28.6527 -1.0842 22.9223 -0.517359 19.3856 2.98488L18.0005 4.35473L16.6154 2.98488C13.0858 -0.517359 7.34838 -1.0842 3.49533 2.06714C-0.920213 5.6841 -1.15224 12.1757 2.79925 16.0963L16.4045 29.5789C17.2833 30.4494 18.7107 30.4494 19.5896 29.5789L33.1948 16.0963C37.1533 12.1757 36.9212 5.6841 32.5057 2.06714Z"
+                                fill="#BF0404"
+                            />
+                        </svg>
+                    </div>
                 </h2>
                 <button>Jag vill bli blodgivare!</button>
                 <div class="opacity-box"></div>
@@ -68,7 +96,7 @@
                             ditt blod behövs för att täcka framtidens behov!
                         </p>
                     </article>
-                    <article>
+                    <article class="left-input-article">
                         <h3>Vill du veta mer?</h3>
                         <a href="#"
                             >Klicka här för att läsa mer om blodgivning!</a
@@ -138,6 +166,7 @@
                 </article>
             </footer>
         </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

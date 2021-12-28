@@ -4,3 +4,4 @@
 - Bakgrundfärgen?
 - Hover på iconer?
 - Opacitet upptill på desktop?
+- Svg oändlig animation?
