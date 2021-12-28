@@ -29,6 +29,39 @@ if (window.innerWidth > 900) {
     };
 }
 
+// SEARCH ANIMATION
+const searchIcon = document.getElementById('searchIcon');
+searchIcon.addEventListener('click', () => {
+    document.querySelector('.mobile-menu').style.display = 'none';
+    document.getElementById('searchAnimationContainer').style.display = 'flex';
+
+    document.getElementById('searchAnimationContainer').innerHTML = `
+    <header class="mobile-search-animation">
+                <div class="header-logo">
+                    <img src="/img/logo.png" alt="GeBlod Logga" />
+                </div>
+                <div class="search-container">
+                    <input type="text" placeholder="Vad söker du?" />
+                    <div><i class="fas fa-search"></i></div>
+                </div>
+                <div class="x-icon" id="xIcon">
+                    <i class="fas fa-times"></i>
+                </div>
+            </header>
+    `;
+    closeSearch();
+});
+
+function closeSearch() {
+    const xIcon = document.getElementById('xIcon');
+
+    xIcon.addEventListener('click', () => {
+        document.querySelector('.mobile-menu').style.display = 'flex';
+        document.getElementById('searchAnimationContainer').style.display =
+            'none';
+    });
+}
+
 // SVG HEART ANIMATION
 gsap.to('#svgHeart', {
     duration: 1,
