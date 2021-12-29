@@ -1,16 +1,13 @@
 /* - - - - - VARIABLES - - - - - */
 $oswald-font: 'Oswald', sans-serif;
 $black-color: #142601;
-$btn-color: #f13712;
-$hover-color: #365902;
+$polka-red: #f13712;
+$christmastree-green: #365902;
+$santa-red: #bf0404;
+$background-white: #ece8e9;
 
 /* - - - - - HEADER - - - - - */
-.mobile-menu {
-    display: none;
-}
-.mobile-menu-slide {
-    display: none;
-}
+// DESKTOP MENU
 .desktop-menu {
     display: flex;
     justify-content: space-around;
@@ -18,6 +15,7 @@ $hover-color: #365902;
     width: 100%;
     height: 100px;
 
+    // LOGO
     .header-logo {
         width: 150px;
     }
@@ -25,6 +23,7 @@ $hover-color: #365902;
         width: 103px;
         cursor: pointer;
     }
+    // MENU
     nav {
         width: 50%;
         display: flex;
@@ -37,10 +36,11 @@ $hover-color: #365902;
             transition: 0.1s linear;
 
             &:hover {
-                color: $hover-color;
+                color: $christmastree-green;
             }
         }
     }
+    //SEARCH
     .search-container-desktop {
         width: 30%;
         display: flex;
@@ -62,7 +62,6 @@ $hover-color: #365902;
                 padding: 5px 0 5px 15px;
             }
             &[type='text' i] {
-                color: red;
                 color: $black-color;
                 font-size: 16px;
             }
@@ -75,10 +74,18 @@ $hover-color: #365902;
             cursor: pointer;
 
             &:hover {
-                color: $hover-color;
+                color: $christmastree-green;
             }
         }
     }
+}
+
+// HIDE BURGER MENU
+.mobile-menu {
+    display: none;
+}
+.mobile-menu-slide {
+    display: none;
 }
 
 /* - - - - - LANDING PAGE - - - - - */
@@ -98,6 +105,7 @@ $hover-color: #365902;
     button {
         margin-left: 120px;
     }
+    // SVG HEART
     .svg-heart-text {
         display: inline;
         position: relative;
@@ -115,6 +123,7 @@ $hover-color: #365902;
     justify-content: space-between;
     width: 100%;
 
+    // LEFT SIDE
     .left-container {
         position: relative;
         margin: 5% 5% 5% 10%;
@@ -136,6 +145,7 @@ $hover-color: #365902;
         width: 100%;
         margin-top: 20px;
     }
+    // RIGHT SIDE
     .right-container {
         margin: 5% 10% 5% 5%;
         width: 50%;
@@ -155,6 +165,7 @@ footer {
     flex-direction: row-reverse;
     background-image: linear-gradient(to top, #ffffff, #ffffff00);
 
+    // SOCIAL MEDIA
     .SoMe-container {
         min-width: 30%;
 
@@ -162,6 +173,7 @@ footer {
             display: none;
         }
     }
+    // LOGO & LINKS
     .logo-info-container {
         width: 70%;
         display: flex;

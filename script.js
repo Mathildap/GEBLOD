@@ -1,12 +1,3 @@
-// COOKIE
-let main = document.querySelector('main');
-let cookie = `
-<section>
-<p>Text</p>
-<button>Accept</button>
-<button>Show</button>
-</section>`;
-
 // CHANGE HEADER COLOR
 const header = document.querySelector('header');
 const desktopHeader = document.querySelector('.desktop-menu');
@@ -51,12 +42,13 @@ function closeMenu() {
 
 // OPEN SEARCH
 const searchIcon = document.getElementById('searchIcon');
+
 searchIcon.addEventListener('click', () => {
     document.querySelector('.mobile-menu').style.display = 'none';
     document.getElementById('searchAnimationContainer').style.display = 'flex';
 
     document.getElementById('searchAnimationContainer').innerHTML = `
-    <header class="mobile-search-animation">
+    <header class="mobile-search-container">
                 <div class="header-logo">
                     <img src="/img/logo.png" alt="GeBlod Logga" />
                 </div>
@@ -69,6 +61,7 @@ searchIcon.addEventListener('click', () => {
                 </div>
             </header>
     `;
+
     closeSearch();
 });
 
@@ -82,21 +75,22 @@ function closeSearch() {
     });
 }
 
-// SVG HEART ANIMATION
+// SVG HEART ANIMATION MOBILE
 gsap.to('#svgHeart', {
     duration: 1,
     scale: 1.2,
     repeat: -1,
 });
 
+// SVG HEART ANIMATION DESKTOP
 gsap.to('#svgHeartDesktop', {
     duration: 1,
     scale: 1.2,
     repeat: -1,
 });
 
-// COOKIE
-if (!localStorage.getItem('COOKIE')) {
+// COOKIES
+if (!localStorage.getItem('COOKIES')) {
     document.querySelector('main').insertAdjacentHTML(
         'beforeend',
         `
@@ -108,7 +102,7 @@ if (!localStorage.getItem('COOKIE')) {
 
     document.getElementById('acceptCookies').addEventListener('click', () => {
         console.log('accept');
-        localStorage.setItem('COOKIE', true);
+        localStorage.setItem('COOKIES', true);
         document.querySelector('.cookie').remove();
     });
 }

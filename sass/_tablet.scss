@@ -1,5 +1,6 @@
 /* - - - - - HEADER - - - - - */
 header {
+    // HEADER ICONS
     .burger-menu,
     .search-box {
         width: 15%;
@@ -28,13 +29,16 @@ header {
         font-size: 56px;
         margin: 85px 0px 85px 30px;
     }
+    // SVG HEART
     .svg-heart {
         display: none;
     }
+    // BUTTON
     button {
         padding: 20px 40px;
     }
 }
+
 /* - - - - - SCROLL DOWN PAGE - - - - - */
 .scrolldown-page {
     width: 70%;
@@ -44,11 +48,13 @@ header {
         p {
             margin-left: 0;
         }
+        // INPUT
         input {
             height: 58px;
             position: relative;
             display: inline-block;
         }
+        // BUTTON
         button {
             height: 58px;
             width: 150px;
@@ -69,6 +75,7 @@ header {
 }
 
 /* - - - - - FOOTER - - - - - */
+// SOCIAL MEDIA
 .SoMe-container {
     width: 70%;
     margin: 0 auto;
@@ -76,6 +83,7 @@ header {
         margin-left: 10%;
     }
 }
+// LOGO & LINKS
 .logo-info-container {
     display: flex;
     justify-content: space-around;
