@@ -29,6 +29,26 @@ if (window.innerWidth > 900) {
     };
 }
 
+// MENU SLIDE
+document.querySelector('.mobile-menu-slide').style.display = 'none';
+const burgerIcon = document.getElementById('burgerIcon');
+
+burgerIcon.addEventListener('click', () => {
+    document.querySelector('.mobile-menu').style.display = 'none';
+    document.querySelector('.mobile-menu-slide').style.display = 'block';
+
+    closeMenu();
+});
+
+function closeMenu() {
+    const closeMenu = document.getElementById('closeMenu');
+
+    closeMenu.addEventListener('click', () => {
+        document.querySelector('.mobile-menu-slide').style.display = 'none';
+        document.querySelector('.mobile-menu').style.display = 'flex';
+    });
+}
+
 // SEARCH ANIMATION
 const searchIcon = document.getElementById('searchIcon');
 searchIcon.addEventListener('click', () => {
@@ -66,11 +86,11 @@ function closeSearch() {
 gsap.to('#svgHeart', {
     duration: 1,
     scale: 1.2,
-    repeat: 10,
+    repeat: -1,
 });
 
 gsap.to('#svgHeartDesktop', {
     duration: 1,
     scale: 1.2,
-    repeat: 10,
+    repeat: -1,
 });

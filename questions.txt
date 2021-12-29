@@ -1,7 +1,1 @@
-- Jenni kommenterade om H1
-- När man scrollar ner ska menyn bli vit?
-- Mobilvy, ska bilder va större eller funkar det så?
-- Bakgrundfärgen?
-- Hover på iconer?
-- Opacitet upptill på desktop?
-- Svg oändlig animation?
+- komprimera bilder
