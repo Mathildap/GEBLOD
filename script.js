@@ -29,7 +29,7 @@ if (window.innerWidth > 900) {
     };
 }
 
-// MENU SLIDE
+// OPEN MENU
 document.querySelector('.mobile-menu-slide').style.display = 'none';
 const burgerIcon = document.getElementById('burgerIcon');
 
@@ -49,7 +49,7 @@ function closeMenu() {
     });
 }
 
-// SEARCH ANIMATION
+// OPEN SEARCH
 const searchIcon = document.getElementById('searchIcon');
 searchIcon.addEventListener('click', () => {
     document.querySelector('.mobile-menu').style.display = 'none';
@@ -94,3 +94,21 @@ gsap.to('#svgHeartDesktop', {
     scale: 1.2,
     repeat: -1,
 });
+
+// COOKIE
+if (!localStorage.getItem('COOKIE')) {
+    document.querySelector('main').insertAdjacentHTML(
+        'beforeend',
+        `
+        <div class="cookie">
+            <h2>Den här webbplatsen använder kakor</h2>
+            <div><button id="acceptCookies">Acceptera</button><button id="showMoreCookies">Visa detaljer</button></div>
+        </div>`
+    );
+
+    document.getElementById('acceptCookies').addEventListener('click', () => {
+        console.log('accept');
+        localStorage.setItem('COOKIE', true);
+        document.querySelector('.cookie').remove();
+    });
+}

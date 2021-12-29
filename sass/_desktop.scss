@@ -1,6 +1,6 @@
 /* - - - - - VARIABLES - - - - - */
 $oswald-font: 'Oswald', sans-serif;
-$text-color: #142601;
+$black-color: #142601;
 $btn-color: #f13712;
 $hover-color: #365902;
 
@@ -57,13 +57,13 @@ $hover-color: #365902;
             outline: 0;
 
             &::placeholder {
-                color: $text-color;
+                color: $black-color;
                 font-size: 16px;
                 padding: 5px 0 5px 15px;
             }
             &[type='text' i] {
                 color: red;
-                color: $text-color;
+                color: $black-color;
                 font-size: 16px;
             }
         }
