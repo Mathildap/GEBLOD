@@ -2,78 +2,75 @@
 const header = document.querySelector('header');
 const desktopHeader = document.querySelector('.desktop-menu');
 
-window.onscroll = () => {
-    if (window.scrollY > 75) {
-        header.classList.add('scroll-active');
-    } else {
-        header.classList.remove('scroll-active');
-    }
-};
+checkWidthAndColorHeader();
 
-if (window.innerWidth > 900) {
+window.addEventListener('resize', () => {
+    checkWidthAndColorHeader();
+});
+
+function checkWidthAndColorHeader() {
     window.onscroll = () => {
         if (window.scrollY > 75) {
-            desktopHeader.classList.add('scroll-active');
+            header.classList.add('scroll-active');
         } else {
-            desktopHeader.classList.remove('scroll-active');
+            header.classList.remove('scroll-active');
         }
     };
+
+    if (window.innerWidth > 900) {
+        window.onscroll = () => {
+            if (window.scrollY > 75) {
+                desktopHeader.classList.add('scroll-active');
+            } else {
+                desktopHeader.classList.remove('scroll-active');
+            }
+        };
+    }
 }
 
 // OPEN MENU
-document.querySelector('.mobile-menu-slide').style.display = 'none';
 const burgerIcon = document.getElementById('burgerIcon');
 
 burgerIcon.addEventListener('click', () => {
-    document.querySelector('.mobile-menu').style.display = 'none';
-    document.querySelector('.mobile-menu-slide').style.display = 'block';
-
-    closeMenu();
+    openMenu();
 });
 
-function closeMenu() {
-    const closeMenu = document.getElementById('closeMenu');
-
-    closeMenu.addEventListener('click', () => {
-        document.querySelector('.mobile-menu-slide').style.display = 'none';
-        document.querySelector('.mobile-menu').style.display = 'flex';
-    });
+function openMenu() {
+    if (window.innerWidth > 550) {
+        document.querySelector('.mobile-menu-slide').style.width = '50%';
+        document.querySelector('.mobile-menu-slide').style.boxShadow =
+            '0px 0px 4px 4px #00000525';
+    } else {
+        document.querySelector('.mobile-menu-slide').style.width = '100%';
+    }
 }
+
+// CLOSE MENU
+closeMenu.addEventListener('click', () => {
+    document.querySelector('.mobile-menu-slide').style.width = '0%';
+    document.querySelector('.mobile-menu-slide').style.boxShadow = '0';
+});
 
 // OPEN SEARCH
 const searchIcon = document.getElementById('searchIcon');
 
 searchIcon.addEventListener('click', () => {
-    document.querySelector('.mobile-menu').style.display = 'none';
-    document.getElementById('searchAnimationContainer').style.display = 'flex';
-
-    document.getElementById('searchAnimationContainer').innerHTML = `
-    <header class="mobile-search-container">
-                <div class="header-logo">
-                    <img src="/img/logo.png" alt="GeBlod Logga" />
-                </div>
-                <div class="search-container">
-                    <input type="text" placeholder="Vad söker du?" />
-                    <div><i class="fas fa-search"></i></div>
-                </div>
-                <div class="x-icon" id="xIcon">
-                    <i class="fas fa-times"></i>
-                </div>
-            </header>
-    `;
-
-    closeSearch();
+    openSearch();
 });
 
-function closeSearch() {
-    const xIcon = document.getElementById('xIcon');
-
-    xIcon.addEventListener('click', () => {
-        document.querySelector('.mobile-menu').style.display = 'flex';
-        document.getElementById('searchAnimationContainer').style.display =
-            'none';
-    });
+function openSearch() {
+    document.querySelector('.mobile-search-slide').style.width = '100%';
+    document.querySelector('.mobile-search-slide').style.boxShadow =
+        '0px 0px 4px 4px #00000525';
 }
+
+// CLOSE SEARCH
+document.getElementById('xIcon').addEventListener('click', () => {
+    console.log('close');
+    document.querySelector('.mobile-search-slide').style.width = '0%';
+    document.querySelector('.mobile-search-slide').style.boxShadow =
+        '0px 0px 0px 0px #fff';
+});
 
 // SVG HEART ANIMATION MOBILE
 gsap.to('#svgHeart', {
