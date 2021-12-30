@@ -21,11 +21,7 @@ header {
     height: 85px;
     display: flex;
     justify-content: space-between;
-    background-image: ease-gradient(
-        180deg,
-        #ece8e9 0%,
-        rgba(236, 232, 233, 0.8) 100%
-    );
+    background-image: ease-gradient(to bottom, #f7f7f7, rgba(236, 232, 233, 0));
     position: fixed;
     z-index: 12;
     transition: 0.5s ease;
