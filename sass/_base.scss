@@ -21,7 +21,7 @@ header {
     height: 85px;
     display: flex;
     justify-content: space-between;
-    background-image: ease-gradient(to bottom, #f7f7f7, rgba(236, 232, 233, 0));
+    background-image: linear-gradient(#ece8e9, #ffffff00);
     position: fixed;
     z-index: 12;
     transition: 0.5s ease;
@@ -159,11 +159,6 @@ header {
     overflow-x: hidden;
     align-items: center;
     background-color: $background-white;
-    background-image: ease-gradient(
-        180deg,
-        #ece8e9 0%,
-        rgba(236, 232, 233, 0.8) 100%
-    );
     z-index: 13;
 
     .header-logo {
@@ -298,7 +293,7 @@ header {
     .opacity-box {
         height: 97px;
         width: 100%;
-        background-image: ease-gradient(to top, #ece8e9d4, #ece8e900);
+        background-image: linear-gradient(#ffffff00, #ece8e9);
         position: absolute;
         bottom: 0;
         z-index: 9;
