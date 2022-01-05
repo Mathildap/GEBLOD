@@ -76,14 +76,14 @@ document.getElementById('xIcon').addEventListener('click', () => {
 gsap.to('#svgHeart', {
     duration: 1,
     scale: 1.2,
-    repeat: 10,
+    repeat: -1,
 });
 
 // SVG HEART ANIMATION DESKTOP
 gsap.to('#svgHeartDesktop', {
     duration: 1,
     scale: 1.2,
-    repeat: 10,
+    repeat: -1,
 });
 
 // COOKIES
